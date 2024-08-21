@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    height: auto;
+    width: 100%;
+    background: linear-gradient(45deg, #22ccd1,#90cd74,#c66436,#dea323);
+    display: flex;
+    background-size: 300% 300%;
+    justify-content: center;
+    align-items: center;
+    animation: animate 12s ease-in-out infinite;
+
+}
+
+
+@keyframes animate {
+
+    0%{background-position:0 50% ;
+
+    }
+   50%{background-position:100% 50% ;
+
+    }
+    100%{background-position:0 50% ;
+
+    }
+    
+}
+
+
+.container {
+    height: auto;
+    width: 30%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+} 
+
+@media screen and (max-width:768px) {
+
+
+
+    body {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        width: auto;
+    }
+
+
+    .btn {
+        margin-left: 40px;}
+
+}
+
+
+
+
+
+
+.header h1 {
+    text-align: center;
+    color: white;
+    
+}
+
+.container_details {
+    padding-bottom: 80px;
+    width: auto;
+    background-color: #234581;
+    display: flex;
+    flex-direction: column;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+}
+
+/* .container_details h1{
+text-align: center;
+} */
+
+.btc_wallet{
+
+    color:orange;
+    text-align: center;
+}
+
+.btc{
+    text-align: center;
+    color: orange;
+}
+
+.usdt{
+font-size:27px ;
+text-align: center;
+color: green;
+}
+
+.usdt_wallet{
+    text-align: center;
+    color: green;
+}
+
+.paragraph{
+text-align: center;
+color: white;
+
+}
+
+
+
+.btn{
+    margin-left: 170px;
+width: 100px;
+
+}
+
+.copyfield{
+    display: flex;
+    align-items: center;
+    background-color: #212121;
+    border-radius: 5px;
+}
+
+#link{
+    width: 350px;
+    padding: 12px 10px;
+    border: 1px solid #212121;
+    background-color: orange;
+    border-radius: 5px;
+    font-size: 19px;
+    overflow-x: scroll;
+}
+#link::-webkit-scrollbar{
+    display: none;
+}
+
+#copy-btn{
+    color: #fff;
+    padding: 0 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
